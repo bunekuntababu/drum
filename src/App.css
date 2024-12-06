@@ -1,0 +1,312 @@
+ .drum-kit-container {
+  background-image: url('image/drumpic.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position:center;
+  min-height: 100vh;
+  display: flex;
+  max-width: 1520px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f4f4f4; */
+  font-family: Arial, sans-serif;
+}
+.body{
+  /* display: flex; */
+  background-image: url('../image/drumpic.jpg');
+  background-size: cover; /* Adjust to cover the entire background */
+  background-repeat: no-repeat; /* Prevent tiling of the image */
+  background-position:center;
+  width: 1520px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+  /* background-color: #3f51b5; */
+}
+
+.drum-kit-wrapper {
+  background-color: rgba(255, 255, 255, 0.244);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.drum-kit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.drum-kit-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.kit-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.kit-selector button {
+  background-color: blue;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kit-selector button.active {
+  background-color: #57e24a;
+  color: rgb(7, 7, 7);
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.drum-pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.drum-pad.active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.pad-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.pad-key {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+} 
+
+/* Color definitions */
+.drum-pad.red { background-color: #f44336; }
+.drum-pad.blue { background-color: #2196f3; }
+.drum-pad.green { background-color: #4caf50; }
+.drum-pad.yellow { background-color: #ffeb3b; }
+.drum-pad.purple { background-color: #9c27b0; }
+.drum-pad.indigo { background-color: #3f51b5; }
+.drum-pad.pink { background-color: #e91e63; }
+.drum-pad.teal { background-color: #009688; }
+.drum-pad.orange { background-color: #ff9800; }
+.drum-pad.cyan { background-color: #00bcd4; }
+.drum-pad.emerald { background-color: #4caf50; }
+.drum-pad.sky { background-color: #03a9f4; }
+.drum-pad.lime { background-color: #cddc39; }
+.drum-pad.fuchsia { background-color: #9c27b0; }
+.drum-pad.rose { background-color: #f44336; }
+
+.drum-kit-footer {
+  margin-top: 15px;
+  text-align: center;
+  color: #0c0b0b;
+} 
+.ram{
+  color: #4caf50;
+}
+
+/* src/App.css */
+.app-container {
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #  45c50a; */
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #17daca;
+  color: white;
+  padding: 15px 20px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link, .logout-button {
+  color: rgba(176, 17, 239, 0.796);
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 15px;
+  background-color: #03a9f4;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover, .logout-button:hover {
+  background-color: #87f90d;
+}
+
+.username {
+  margin-right: 15px;
+}
+
+/* Footer Styles */
+.app-footer {
+  background-color: #c1ede9d5;
+  color: rgb(86, 73, 73);
+  padding: 1px 1px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
+}
+
+.footer-link, .social-links a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover, .social-links a:hover {
+  color: rgb(12, 99, 238);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2px;
+  padding-top: 2px;
+  border-top: 1px solid #555;
+}
+
+/* Authentication Styles */
+.auth-container {
+  background-image: url('src/image/drumpic.jpg');
+  background-size: cover; /* Adjust to cover the entire background */
+  background-repeat: no-repeat; /* Prevent tiling of the image */
+  background-position:center;
+  /* background-color: white; */
+  max-width: 1520px;
+  width: 100%;
+  /* padding: 40px; */
+  min-height: 80vh;
+  display: flex;
+  max-width: 1520px;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 12px; */
+}
+
+
+.auth-form {
+  background-color: #eadff744;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px; 
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+0% {
+  transform: scale(0.5);
+}
+
+100% {
+  transform: scale(1);
+}
+  }
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(16, 15, 15);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ee2525;
+  border-radius: 4px;
+  background-color: #92e8e775;
+  font-size: 16px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: greenyellow;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 15px;
+  color: black;
+}
+
+.auth-link a {
+  color: yellow;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
